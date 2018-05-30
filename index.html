@@ -1,15 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!--Meta-->
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- CSS -->
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<title> IronHacks first iteration </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to iRonMate!</h1>
+            </div>
+        </div>
+        <div class="row">        
+            <div class="col">                
+                <h4>A very special app for NYU Stern School of Business students!</h4>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col">
+                <div id="map"></div><!--divmapend-->
+            </div>            
+            <div class="col">      
+                <nav class="navigator">
+                   <button id="cheap">Show me the cheapest!</button>
+                   <button id="near">Show me the nearest!</button>
+                   <button id="safe">Show me the safest!</button>
+                </nav>
+            </div>  
+         </div>        
+         <div class="row">
+            <div class="col-md-12">
+            <h3 id="ps">Here wil be your top safest boroughs</h3>
+                <div class ="col">
+				<div id="tableWrapper">
+                        <div id="tableScroll">
+                            <table id="ts">
+                                    <tr>
+                                        <div class="row justify-content-center">
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                          <th>Borough</th>
+                                          <th>Number of crimes</th>
+                                    </tr>
+
+                                    <tbody id="tableSafe">                                    
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>            
+                </div>
+                <div class ="col">
+                    <p></p>
+                </div>
+            </div>
+         </div>       
+        <div class="row">        
+            <div class="col">      
+                <nav class="navigator">
+                   <button id="dS">Download table!</button>
+                </nav>
+            </div>
+         </div>        
+        <div class="row">
+            <div class="col">
+                <h3 id="pn">Here wil be your top nearest districts</h3>                
+				<div id="tableWrapper">
+					<div id="tableScroll">
+						<table id="tn">
+								<tr>
+                                    <div class="row justify-content-center">
+                                    </div>
+								</tr>
+								<tr>
+		                              <th>District number</th>                                    
+		                              <th>Neighborhoods name</th>
+                                      <th>Distance in meters to NYU</th>
+                                      <th>Latitude</th>
+                                      <th>Longitude</th>                                    
+								</tr>
+								<tbody id="tableNear">
+								</tbody>
+						</table>
+					</div>
+				</div>                
+            </div>
+         </div>
+        <div class="row">        
+            <div class="col">      
+                <nav class="navigator">
+                   <button id="dN">Download table!</button>
+                </nav>
+            </div>
+         </div>            
+        <div class="row">
+            <div class="col">
+                <h3 id="pc">Here wil be your top cheapest boroughs</h3>                
+				<div id="tableWrapper">
+					<div id="tableScroll">
+						<table id="tc">
+								<tr>
+                                    <div class="row justify-content-center"></div>
+								</tr>
+								<tr>
+		                              <th>Borough</th>
+                                      <th>Extremely Low Income Units</th>                                  
+								</tr>
+								<tbody id="tableCheap">
+								</tbody>
+						</table>     
+					</div>
+				</div>                
+            </div>
+         </div>
+        <div class="row">        
+            <div class="col">      
+                <nav class="navigator">
+                   <button id="dC">Download table!</button>
+                </nav>
+            </div>
+         </div>        
+         <footer>
+             <p class="pfooter">This webpage was created by Oscar Camilo Pulido Peña
+             <br>Creative commons
+             <br>Universidad Nacional de Colombia-Purdure University
+             <br>2018<br>
+             </p>
+         </footer>              
+    </div>            
+  </body>
+<!--ScriptjQuery-->
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>    
+<!--JavaScript-->
+    <script src="index.js"></script> 
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Convert-HTML-Table-To-CSV-tabletoCSV/jquery.tabletoCSV.js"></script>
+<!--ScriptGoogleKey-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzhCFJ09vC5xg8Det99lr2PHuYfNOK5fQ&callback=nyMap"></script>    
+<!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Convert-HTML-Table-To-CSV-tabletoCSV/jquery.tabletoCSV.js"></script>    
 </html>

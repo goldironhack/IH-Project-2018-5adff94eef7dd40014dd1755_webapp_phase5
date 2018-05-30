@@ -1,9 +1,146 @@
-body {
-    color: #444;
-    font-family: Arial, sans-serif;
+h1,h3,h4,p,pfooter{
+        text-align: center;
+}
+h1{
+    text-align: center;
+    background-color: floralwhite;
+    color: rgba(139, 102, 18, 0.71);
+    border-bottom-style: dashed;
+    border-width: medium;
+}
+h4{
+    
+    background-color: #ffff99;
+    font-family: 'Pangolin', cursive;
+    border-bottom-style: none;
+    color: firebrick;
+    border-radius: 20px;
+    height: 80%;
+    padding: 10px;
+    
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-style: dashed;
+    border-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    color: red;
+    background-color: blanchedalmond;
+}
+body{
+    background-color:#edf2e1;
+}
+.navigator{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+th{
+    background-color: #f2be5e;
 }
 
-.container {
+table{
+	width: 90%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    margin-left: 8%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+table, th, td{
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+	left: 10px;
+}
+
+#tableWrapper {
+  text-align: center;    
+  position: relative;
+  width: 90%;
+  height: 220px;
+}
+
+#tableScroll {
+  height: 210px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+#statesChart{
+	height: 400px;
+	width: 100%;
+}
+
+#map{
+    width: 400px;
+    height: 400px;
+    background-color: #eba162;
+    position: fixed;
+    margin-left: 10%;
+    margin-right: 30%;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+}
+
+button{
+    border-style: dashed;
+    border-radius: 30px ;
+    border-color: #b98f04;
+    color: #140202;
+    width: auto;
+    height: auto;
+    background-color: beige;
+    font-family: 'Pangolin', cursive;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+button:hover{
+    color: black;
+    background-color: yellow;
+}
+
+#dC,#dS,#dN{
+    border-top-style: groove;
+    border-bottom-style:groove;
+    font-size: 20px;
+    border-width: thick;
+    border-color: red;
+    
+}
+#dC:hover,#dS:hover,#dN:hover{
+    background-color:#e0a18e;
+}
+
+
+footer{
+    border-top: 10px;
+    line-height: 18px;
     width: 100%;
-    max-width: 960px;
+    height: auto;
+    border-top-style: dashed;
+    border-top-color: floralwhite;
+    border-width: medium;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pfooter{
+    color: floralwhite ;   
+    font-family: cursive; 
 }
